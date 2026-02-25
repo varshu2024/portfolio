@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varshini Uppada | Software Engineer</title>
+  <meta name="description"
+    content="Backend-focused Software Engineering Intern specializing in scalable microservices, cloud-native applications, and AI/ML solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── LOADER ── -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo"><span class="brand-code">&lt;</span>VU<span class="brand-code">/&gt;</span></div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+      <div class="loader-text">Initialising portfolio...</div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- 3D Visualization Container -->
+  <div id="vis3d"></div>
+
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <span class="brand-code">&lt;</span>VU<span class="brand-code">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link" data-target="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+      <li><a href="#skills" class="nav-link" data-target="skills">Skills</a></li>
+      <li><a href="#experience" class="nav-link" data-target="experience">Experience</a></li>
+      <li><a href="#projects" class="nav-link" data-target="projects">Projects</a></li>
+      <li><a href="#education" class="nav-link" data-target="education">Education</a></li>
+      <li><a href="#certifications" class="nav-link" data-target="certifications">Certs</a></li>
+      <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span> Available for opportunities
+      </div>
+      <h1 class="hero-name reveal-up">
+        <span class="name-line">Varshini</span>
+        <span class="name-line gradient-text">Uppada</span>
+      </h1>
+      <div class="hero-typewriter reveal-up">
+        <span class="typewriter-prefix">I build </span>
+        <span class="typewriter-text" id="typewriter"></span>
+        <span class="typewriter-cursor">|</span>
+      </div>
+      <p class="hero-desc reveal-up">
+        AI/ML Engineering &amp; Backend Intern with <strong>300+ DSA problems</strong> solved on
+        <strong>LeetCode</strong> &amp; <strong>HackerRank</strong>.
+        Expert in building LLM pipelines, NLP systems, and scalable high-performance APIs.
+      </p>
+      <div class="hero-stats reveal-up">
+        <div class="stat-item">
+          <span class="stat-number" data-count="300">0</span><span>+</span>
+          <span class="stat-label">LeetCode &amp; HackerRank</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="40">0</span><span>%</span>
+          <span class="stat-label">API Improvement</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="10">0</span><span>+</span>
+          <span class="stat-label">REST APIs Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="3">0</span>
+          <span class="stat-label">Internships</span>
+        </div>
+      </div>
+      <div class="hero-cta reveal-up">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right">
+      <div class="avatar-ring reveal-scale">
+        <img src="avatar.png" alt="Varshini Uppada" class="avatar-photo" />
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+      </div>
+
+      <div class="floating-chips">
+        <div class="chip chip-1">Django</div>
+        <div class="chip chip-2">AWS</div>
+        <div class="chip chip-3">Docker</div>
+        <div class="chip chip-4">Redis</div>
+        <div class="chip chip-5">Python</div>
+        <div class="chip chip-6">PostgreSQL</div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal-up">About <span class="gradient-text">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            I'm a B.Tech student in <strong>Electronics & Communication Engineering</strong> at Satya Institute of
+            Technology and Management, bridging the gap between <strong>AI/ML and scalable systems</strong>.
+            My passion lies in crafting intelligent backend architectures — where LLMs meet robust, performant APIs.
+          </p>
+          <p>
+            Across 3 internships, I've integrated NLP models into production, improved response times by 30%,
+            and containerized AI workloads. I believe in engineering AI solutions that are as maintainable
+            as they are innovative.
+          </p>
+          <div class="about-links">
+            <a href="mailto:varshuppada@gmail.com" class="about-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              varshuppada@gmail.com
+            </a>
+            <a href="tel:+918885405826" class="about-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              +91 8885405826
+            </a>
+            <a href="#" class="about-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="#" class="about-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="about-cards reveal-right">
+          <div class="info-card">
+            <div class="info-card-icon">🎓</div>
+            <div>
+              <div class="info-card-label">Education</div>
+              <div class="info-card-value">B.Tech ECE – CGPA 8.12</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">📍</div>
+            <div>
+              <div class="info-card-label">Location</div>
+              <div class="info-card-value">Vizianagaram, Andhra Pradesh</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">💼</div>
+            <div>
+              <div class="info-card-label">Focus</div>
+              <div class="info-card-value">AI/ML Engineering &amp; Backend</div>
+            </div>
+          </div>
+          <div class="info-card" style="flex-direction:column; align-items:flex-start; gap:.7rem;">
+            <div style="display:flex; align-items:center; gap:.6rem;">
+              <div class="info-card-icon">🧠</div>
+              <div>
+                <div class="info-card-label">Competitive Programming</div>
+                <div class="info-card-value">300+ Problems Solved</div>
+              </div>
+            </div>
+            <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+              <span
+                style="display:inline-flex;align-items:center;gap:.3rem;font-size:.72rem;font-weight:700;padding:.25rem .65rem;border-radius:999px;background:rgba(255,161,22,.12);border:1px solid rgba(255,161,22,.35);color:#ffa11a;">
+                <span style="font-size:.9rem;">🟧</span> LeetCode
+              </span>
+              <span
+                style="display:inline-flex;align-items:center;gap:.3rem;font-size:.72rem;font-weight:700;padding:.25rem .65rem;border-radius:999px;background:rgba(50,200,120,.12);border:1px solid rgba(50,200,120,.35);color:#1ba94c;">
+                <span style="font-size:.9rem;">✅</span> HackerRank
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title reveal-up">Technical <span class="gradient-text">Skills</span></h2>
+
+      <!-- Category tabs -->
+      <div class="skill-tabs reveal-up">
+        <button class="skill-tab active" data-cat="all">All</button>
+        <button class="skill-tab" data-cat="languages">Languages</button>
+        <button class="skill-tab" data-cat="backend">Backend</button>
+        <button class="skill-tab" data-cat="frontend">Frontend</button>
+        <button class="skill-tab" data-cat="database">Databases</button>
+        <button class="skill-tab" data-cat="cloud">Cloud &amp; DevOps</button>
+        <button class="skill-tab" data-cat="ai">AI / ML</button>
+      </div>
+
+      <!-- Animated icon grid -->
+      <div class="skill-icon-grid" id="skillGrid">
+
+        <!-- AI / ML -->
+        <div class="skill-icon-card" data-cat="ai" data-name="LLM" style="--delay:0s">
+          <div class="sic-inner">
+            <i class="devicon-python-plain colored"></i>
+          </div>
+          <span class="sic-label">LLM (LangChain)</span>
+        </div>
+        <div class="skill-icon-card" data-cat="ai" data-name="NLP" style="--delay:.06s">
+          <div class="sic-inner">
+            <i class="devicon-tensorflow-original"></i>
+          </div>
+          <span class="sic-label">NLP</span>
+        </div>
+        <div class="skill-icon-card" data-cat="ai" data-name="PyTorch" style="--delay:.12s">
+          <div class="sic-inner">
+            <i class="devicon-pytorch-original colored"></i>
+          </div>
+          <span class="sic-label">PyTorch</span>
+        </div>
+        <div class="skill-icon-card" data-cat="ai" data-name="TensorFlow" style="--delay:.18s">
+          <div class="sic-inner">
+            <i class="devicon-tensorflow-original colored"></i>
+          </div>
+          <span class="sic-label">TensorFlow</span>
+        </div>
+        <div class="skill-icon-card" data-cat="ai" data-name="Computer Vision" style="--delay:.24s">
+          <div class="sic-inner">
+            <i class="devicon-opencv-plain colored"></i>
+          </div>
+          <span class="sic-label">Computer Vision</span>
+        </div>
+
+        <!-- LANGUAGES -->
+
+        <div class="skill-icon-card" data-cat="languages" data-name="Python" style="--delay:0s">
+          <div class="sic-inner">
+            <i class="devicon-python-plain colored"></i>
+          </div>
+          <span class="sic-label">Python</span>
+        </div>
+        <div class="skill-icon-card" data-cat="languages" data-name="C++" style="--delay:.06s">
+          <div class="sic-inner">
+            <i class="devicon-cplusplus-plain colored"></i>
+          </div>
+          <span class="sic-label">C++</span>
+        </div>
+        <div class="skill-icon-card" data-cat="languages" data-name="Java" style="--delay:.12s">
+          <div class="sic-inner">
+            <i class="devicon-java-plain colored"></i>
+          </div>
+          <span class="sic-label">Java</span>
+        </div>
+        <div class="skill-icon-card" data-cat="languages" data-name="JavaScript" style="--delay:.18s">
+          <div class="sic-inner">
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+          <span class="sic-label">JavaScript</span>
+        </div>
+        <div class="skill-icon-card" data-cat="languages" data-name="SQL" style="--delay:.24s">
+          <div class="sic-inner">
+            <i class="devicon-azuresqldatabase-plain colored"></i>
+          </div>
+          <span class="sic-label">SQL</span>
+        </div>
+        <div class="skill-icon-card" data-cat="languages" data-name="Go" style="--delay:.30s">
+          <div class="sic-inner">
+            <i class="devicon-go-plain colored"></i>
+          </div>
+          <span class="sic-label">Go</span>
+        </div>
+
+        <!-- BACKEND -->
+        <div class="skill-icon-card" data-cat="backend" data-name="Django" style="--delay:.06s">
+          <div class="sic-inner">
+            <i class="devicon-django-plain colored"></i>
+          </div>
+          <span class="sic-label">Django</span>
+        </div>
+        <div class="skill-icon-card" data-cat="backend" data-name="FastAPI" style="--delay:.12s">
+          <div class="sic-inner">
+            <i class="devicon-fastapi-plain colored"></i>
+          </div>
+          <span class="sic-label">FastAPI</span>
+        </div>
+        <div class="skill-icon-card" data-cat="backend" data-name="Flask" style="--delay:.18s">
+          <div class="sic-inner">
+            <i class="devicon-flask-original colored"></i>
+          </div>
+          <span class="sic-label">Flask</span>
+        </div>
+        <div class="skill-icon-card" data-cat="backend" data-name="Node.js" style="--delay:.24s">
+          <div class="sic-inner">
+            <i class="devicon-nodejs-plain colored"></i>
+          </div>
+          <span class="sic-label">Node.js</span>
+        </div>
+
+        <!-- FRONTEND -->
+        <div class="skill-icon-card" data-cat="frontend" data-name="React" style="--delay:.06s">
+          <div class="sic-inner">
+            <i class="devicon-react-original colored"></i>
+          </div>
+          <span class="sic-label">React</span>
+        </div>
+        <div class="skill-icon-card" data-cat="frontend" data-name="HTML5" style="--delay:.12s">
+          <div class="sic-inner">
+            <i class="devicon-html5-plain colored"></i>
+          </div>
+          <span class="sic-label">HTML5</span>
+        </div>
+        <div class="skill-icon-card" data-cat="frontend" data-name="CSS3" style="--delay:.18s">
+          <div class="sic-inner">
+            <i class="devicon-css3-plain colored"></i>
+          </div>
+          <span class="sic-label">CSS3</span>
+        </div>
+
+        <!-- DATABASES -->
+        <div class="skill-icon-card" data-cat="database" data-name="PostgreSQL" style="--delay:.06s">
+          <div class="sic-inner">
+            <i class="devicon-postgresql-plain colored"></i>
+          </div>
+          <span class="sic-label">PostgreSQL</span>
+        </div>
+        <div class="skill-icon-card" data-cat="database" data-name="MySQL" style="--delay:.12s">
+          <div class="sic-inner">
+            <i class="devicon-mysql-plain colored"></i>
+          </div>
+          <span class="sic-label">MySQL</span>
+        </div>
+        <div class="skill-icon-card" data-cat="database" data-name="MongoDB" style="--delay:.18s">
+          <div class="sic-inner">
+            <i class="devicon-mongodb-plain colored"></i>
+          </div>
+          <span class="sic-label">MongoDB</span>
+        </div>
+        <div class="skill-icon-card" data-cat="database" data-name="Redis" style="--delay:.24s">
+          <div class="sic-inner">
+            <i class="devicon-redis-plain colored"></i>
+          </div>
+          <span class="sic-label">Redis</span>
+        </div>
+
+        <!-- CLOUD -->
+        <div class="skill-icon-card" data-cat="cloud" data-name="AWS" style="--delay:.06s">
+          <div class="sic-inner">
+            <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+          </div>
+          <span class="sic-label">AWS</span>
+        </div>
+        <div class="skill-icon-card" data-cat="cloud" data-name="Docker" style="--delay:.12s">
+          <div class="sic-inner">
+            <i class="devicon-docker-plain colored"></i>
+          </div>
+          <span class="sic-label">Docker</span>
+        </div>
+        <div class="skill-icon-card" data-cat="cloud" data-name="Kubernetes" style="--delay:.18s">
+          <div class="sic-inner">
+            <i class="devicon-kubernetes-plain colored"></i>
+          </div>
+          <span class="sic-label">Kubernetes</span>
+        </div>
+        <div class="skill-icon-card" data-cat="cloud" data-name="Jenkins" style="--delay:.24s">
+          <div class="sic-inner">
+            <i class="devicon-jenkins-plain colored"></i>
+          </div>
+          <span class="sic-label">Jenkins</span>
+        </div>
+        <div class="skill-icon-card" data-cat="cloud" data-name="Linux" style="--delay:.30s">
+          <div class="sic-inner">
+            <i class="devicon-linux-plain colored"></i>
+          </div>
+          <span class="sic-label">Linux</span>
+        </div>
+        <div class="skill-icon-card" data-cat="cloud" data-name="Git" style="--delay:.36s">
+          <div class="sic-inner">
+            <i class="devicon-git-plain colored"></i>
+          </div>
+          <span class="sic-label">Git</span>
+        </div>
+
+        <!-- AI/ML -->
+        <div class="skill-icon-card" data-cat="ai" data-name="TensorFlow" style="--delay:.06s">
+          <div class="sic-inner">
+            <i class="devicon-tensorflow-original colored"></i>
+          </div>
+          <span class="sic-label">TensorFlow</span>
+        </div>
+        <div class="skill-icon-card" data-cat="ai" data-name="Pandas" style="--delay:.12s">
+          <div class="sic-inner">
+            <i class="devicon-pandas-original colored"></i>
+          </div>
+          <span class="sic-label">Pandas</span>
+        </div>
+        <div class="skill-icon-card" data-cat="ai" data-name="NumPy" style="--delay:.18s">
+          <div class="sic-inner">
+            <i class="devicon-numpy-original colored"></i>
+          </div>
+          <span class="sic-label">NumPy</span>
+        </div>
+        <div class="skill-icon-card" data-cat="ai" data-name="Scikit-learn" style="--delay:.24s">
+          <div class="sic-inner">
+            <i class="devicon-scikitlearn-plain colored"></i>
+          </div>
+          <span class="sic-label">Scikit-learn</span>
+        </div>
+
+      </div>
+
+      <!-- Proficiency bars -->
+      <div class="skill-bars reveal-up">
+        <h3 class="skill-bars-title">Core Proficiency</h3>
+        <div class="bar-item">
+          <div class="bar-label"><span>Python / Django / FastAPI</span><span>95%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill" data-width="95"></div>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>AWS / Docker / CI-CD</span><span>85%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill" data-width="85"></div>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>PostgreSQL / Redis</span><span>88%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill" data-width="88"></div>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>Data Structures &amp; Algorithms</span><span>90%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill" data-width="90"></div>
+          </div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>AI / ML (TensorFlow, Scikit)</span><span>78%</span></div>
+          <div class="bar-track">
+            <div class="bar-fill" data-width="78"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title reveal-up">Work <span class="gradient-text">Experience</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Python Developer Intern</h3>
+                <div class="timeline-company">Infosys Springboard</div>
+              </div>
+              <div class="timeline-period">Nov 2025 – Jan 2026</div>
+            </div>
+            <ul class="timeline-points">
+              <li>Developed <strong>10+ RESTful APIs</strong> using Django with complete CRUD operations</li>
+              <li>Improved response time by <strong>30%</strong> via query optimization, indexing &amp; Redis caching
+              </li>
+              <li>Reduced deployment time by <strong>40%</strong> by implementing CI/CD pipelines</li>
+              <li>Optimized PostgreSQL performance under concurrent load</li>
+              <li>Containerized applications using <strong>Docker</strong> for consistent environments</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Django</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Developer Intern</h3>
+                <div class="timeline-company">Bluestock</div>
+              </div>
+              <div class="timeline-period">Oct 2025 – Dec 2025</div>
+            </div>
+            <ul class="timeline-points">
+              <li>Built <strong>3 backend modules</strong> (Python/C++) improving efficiency by <strong>18%</strong>
+              </li>
+              <li>Refactored legacy code improving modularity &amp; maintainability</li>
+              <li>Resolved critical defects reducing errors by <strong>20%</strong></li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Python</span><span>C++</span><span>Refactoring</span><span>Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Developer Intern</h3>
+                <div class="timeline-company">HackerRank</div>
+              </div>
+              <div class="timeline-period">Jun 2025 – Jul 2025</div>
+            </div>
+            <ul class="timeline-points">
+              <li>Designed scalable <strong>OOP-based solutions</strong> for algorithmic challenges</li>
+              <li>Implemented Docker containerization for consistent environment management</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>OOP</span><span>Algorithms</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title reveal-up">Featured <span class="gradient-text">Projects</span></h2>
+      <div class="projects-grid">
+
+        <!-- ── Project 1: Scalable URL Shortener ── -->
+        <div class="project-card reveal-up">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">🔗</div>
+            <div class="project-links">
+              <a href="https://github.com/varshu2024/Scalable-URL-Shortener-Technologies" target="_blank" rel="noopener"
+                class="project-link-btn" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Scalable URL Shortener</h3>
+          <p class="project-desc">FastAPI-powered URL shortening service with PostgreSQL persistence, Redis caching, IP
+            geolocation tracking, rate limiting, and Docker containerisation for production-grade deployment.</p>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">Redis</span><span class="metric-label">Cache Layer</span></div>
+            <div class="metric"><span class="metric-val">Docker</span><span class="metric-label">Containerised</span>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>IP Geolocation</span>
+          </div>
+        </div>
+
+        <!-- ── Project 2: IPO Web App REST API ── -->
+        <div class="project-card reveal-up">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">📈</div>
+            <div class="project-links">
+              <a href="https://github.com/varshu2024/IPO-Web-App-REST-API-For-Mobile-App-Apha-Testing" target="_blank"
+                rel="noopener" class="project-link-btn" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">IPO Web App &mdash; REST API</h3>
+          <p class="project-desc">Production REST API backend built during the Bluestock internship (Team A27) powering
+            an IPO-tracking mobile app. Designed for alpha testing with structured endpoints for IPO listings,
+            subscriptions, and real-time data.</p>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">REST</span><span class="metric-label">API Design</span></div>
+            <div class="metric"><span class="metric-val">Alpha</span><span class="metric-label">Tested</span></div>
+          </div>
+          <div class="project-tags">
+            <span>REST API</span><span>Python</span><span>Mobile
+              Backend</span><span>Bluestock</span><span>Internship</span>
+          </div>
+        </div>
+
+        <!-- ── Project 3: Rate-Limited RESTful API ── -->
+        <div class="project-card reveal-up">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">🛡️</div>
+            <div class="project-links">
+              <a href="https://github.com/varshu2024/rate-limited-restful-api-technologies" target="_blank"
+                rel="noopener" class="project-link-btn" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Rate-Limited RESTful API</h3>
+          <p class="project-desc">High-performance FastAPI service with custom middleware for JWT authentication,
+            dynamic rate limiting via a Redis token-bucket algorithm, and comprehensive request/response logging.
+            Handles 100+ req/s with 90% test coverage.</p>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">100+</span><span class="metric-label">Req/s</span></div>
+            <div class="metric"><span class="metric-val">90%</span><span class="metric-label">Test Coverage</span></div>
+          </div>
+          <div class="project-tags">
+            <span>FastAPI</span><span>Redis</span><span>PostgreSQL</span><span>JWT</span><span>Docker</span><span>Token
+              Bucket</span>
+          </div>
+        </div>
+
+      </div>
+
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+        <path
+          d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+      </svg>
+      </a>
+    </div>
+  </section>
+
+
+
+  <!-- ── EDUCATION ── -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title reveal-up">Education</h2>
+      <div class="edu-card reveal-up">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-body">
+          <h3 class="edu-degree">B.Tech – Electronics &amp; Communication Engineering</h3>
+          <div class="edu-school">Satya Institute of Technology and Management</div>
+          <div class="edu-meta">
+            <span class="edu-cgpa">CGPA: <strong>8.12</strong></span>
+            <span class="edu-year">Expected May 2027</span>
+          </div>
+          <div class="edu-progress-wrap">
+            <div class="edu-progress-label">Academic Progress (Semesters completed)</div>
+            <div class="edu-progress-track">
+              <div class="edu-progress-fill" data-width="60"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATIONS ── -->
+  <section id="certifications" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title reveal-up">Certifications &amp; <span class="gradient-text">Achievements</span></h2>
+      <div class="cert-grid reveal-up" id="certGrid">
+
+        <!-- Accenture via Forage -->
+        <div class="cert-card">
+          <div class="cert-card-top">
+            <div class="cert-logo-wrap" style="--cert-color:#a100ff">
+              <span style="color:#a100ff; font-size:1.4rem; font-weight:900;">Ac&gt;</span>
+            </div>
+            <span class="cert-platform" style="--cert-color:#a100ff">Forage</span>
+          </div>
+          <h3 class="cert-name">Developer &amp; Technology Job Simulation</h3>
+          <div class="cert-issuer">Accenture &middot; via Forage</div>
+          <div class="cert-date">&#128197; May 2025</div>
+          <div class="cert-skills">
+            <span>SDLC</span><span>Agile</span><span>Software Testing</span><span>Debugging</span>
+          </div>
+        </div>
+
+        <!-- LinkedIn Learning / GitHub -->
+        <div class="cert-card">
+          <div class="cert-card-top">
+            <div class="cert-logo-wrap" style="--cert-color:#0a66c2">
+              <span
+                style="color:#fff; background:#0a66c2; border-radius:4px; padding:2px 6px; font-size:1rem; font-weight:900;">in</span>
+            </div>
+            <span class="cert-platform" style="--cert-color:#0a66c2">LinkedIn Learning</span>
+          </div>
+          <h3 class="cert-name">Career Essentials in GitHub Professional Certificate</h3>
+          <div class="cert-issuer">LinkedIn Learning &middot; GitHub</div>
+          <div class="cert-date">&#128197; Jan 2025 &middot; 4h 18m</div>
+          <div class="cert-skills">
+            <span>GitHub</span><span>Version Control</span><span>Collaboration</span>
+          </div>
+        </div>
+
+        <!-- Deloitte via Forage -->
+        <div class="cert-card">
+          <div class="cert-card-top">
+            <div class="cert-logo-wrap" style="--cert-color:#86bc25">
+              <span style="color:#1a1a1a; font-weight:900; font-size:1rem;">Deloitte<span
+                  style="color:#86bc25">.</span></span>
+            </div>
+            <span class="cert-platform" style="--cert-color:#86bc25">Forage</span>
+          </div>
+          <h3 class="cert-name">Cyber Job Simulation</h3>
+          <div class="cert-issuer">Deloitte &middot; via Forage</div>
+          <div class="cert-date">&#128197; May 2025</div>
+          <div class="cert-skills">
+            <span>Cyber Security</span><span>Threat Analysis</span>
+          </div>
+        </div>
+
+        <!-- GeeksforGeeks Python -->
+        <div class="cert-card">
+          <div class="cert-card-top">
+            <div class="cert-logo-wrap" style="--cert-color:#2f8d46">
+              <span style="color:#2f8d46; font-size:1.2rem; font-weight:900;">GFG</span>
+            </div>
+            <span class="cert-platform" style="--cert-color:#2f8d46">GeeksforGeeks</span>
+          </div>
+          <h3 class="cert-name">Free Python Course with Certificate</h3>
+          <div class="cert-issuer">GeeksforGeeks &middot; 3-Week Course</div>
+          <div class="cert-date">&#128197; 2025</div>
+          <div class="cert-skills">
+            <span>Python</span><span>OOP</span><span>Data Structures</span>
+          </div>
+        </div>
+
+        <!-- freeCodeCamp / Microsoft C# -->
+        <div class="cert-card">
+          <div class="cert-card-top">
+            <div class="cert-logo-wrap" style="--cert-color:#f04e23">
+              <span style="color:#f04e23; font-size:.95rem; font-weight:900;">fCC</span>
+            </div>
+            <span class="cert-platform" style="--cert-color:#00a4ef">Microsoft</span>
+          </div>
+          <h3 class="cert-name">Foundational C# with Microsoft</h3>
+          <div class="cert-issuer">freeCodeCamp &middot; Microsoft</div>
+          <div class="cert-date">&#128197; May 27, 2025</div>
+          <div class="cert-skills">
+            <span>C#</span><span>.NET</span><span>Developer Certification</span>
+          </div>
+        </div>
+
+        <!-- IBM SkillsBuild -->
+        <div class="cert-card">
+          <div class="cert-card-top">
+            <div class="cert-logo-wrap" style="--cert-color:#006699">
+              <span style="color:#006699; font-size:1.2rem; font-weight:900; letter-spacing:-1px;">IBM</span>
+            </div>
+            <span class="cert-platform" style="--cert-color:#006699">IBM SkillsBuild</span>
+          </div>
+          <h3 class="cert-name">Web Development Fundamentals</h3>
+          <div class="cert-issuer">IBM SkillsBuild</div>
+          <div class="cert-date">&#128197; Jun 4, 2025</div>
+          <div class="cert-skills">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Web Dev</span>
+          </div>
+        </div>
+
+        <!-- Infosys OOP Python -->
+        <div class="cert-card">
+          <div class="cert-card-top">
+            <div class="cert-logo-wrap" style="--cert-color:#007cc3">
+              <span style="color:#007cc3; font-size:.85rem; font-weight:900;">Infosys</span>
+            </div>
+            <span class="cert-platform" style="--cert-color:#007cc3">Springboard</span>
+          </div>
+          <h3 class="cert-name">Object Oriented Programming using Python</h3>
+          <div class="cert-issuer">Infosys Springboard</div>
+          <div class="cert-date">&#128197; Jun 13, 2025</div>
+          <div class="cert-skills">
+            <span>Python</span><span>OOP</span><span>Classes</span>
+          </div>
+        </div>
+
+        <!-- Infosys Python Part 2 -->
+        <div class="cert-card">
+          <div class="cert-card-top">
+            <div class="cert-logo-wrap" style="--cert-color:#007cc3">
+              <span style="color:#007cc3; font-size:.85rem; font-weight:900;">Infosys</span>
+            </div>
+            <span class="cert-platform" style="--cert-color:#007cc3">Springboard</span>
+          </div>
+          <h3 class="cert-name">Programming Fundamentals using Python &ndash; Part 2</h3>
+          <div class="cert-issuer">Infosys Springboard</div>
+          <div class="cert-date">&#128197; Jun 12, 2025</div>
+          <div class="cert-skills">
+            <span>Python</span><span>Functions</span><span>Modules</span>
+          </div>
+        </div>
+
+        <!-- Infosys Python Part 1 -->
+        <div class="cert-card">
+          <div class="cert-card-top">
+            <div class="cert-logo-wrap" style="--cert-color:#007cc3">
+              <span style="color:#007cc3; font-size:.85rem; font-weight:900;">Infosys</span>
+            </div>
+            <span class="cert-platform" style="--cert-color:#007cc3">Springboard</span>
+          </div>
+          <h3 class="cert-name">Programming Fundamentals using Python &ndash; Part 1</h3>
+          <div class="cert-issuer">Infosys Springboard</div>
+          <div class="cert-date">&#128197; Jun 12, 2025</div>
+          <div class="cert-skills">
+            <span>Python</span><span>Basics</span><span>Syntax</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── GITHUB STATS ── -->
+  <section class="section section-dark github-section" id="github">
+    <div class="container">
+      <h2 class="section-title reveal-up">GitHub <span class="gradient-text">Activity</span></h2>
+      <div id="github-stats-widget" class="gh-widget reveal-up">
+        <!-- Filled dynamically by backend.js -->
+        <div class="gh-skeleton">Loading GitHub data...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title reveal-up">Let's <span class="gradient-text">Connect</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="contact-intro">I'm actively looking for <strong>Software Engineering</strong> internships and
+            full-time opportunities. Open to backend, cloud, and AI/ML roles.</p>
+          <div class="contact-items">
+            <a href="mailto:varshuppada@gmail.com" class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-value">varshuppada@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+918885405826" class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div>
+                <div class="contact-item-label">Phone</div>
+                <div class="contact-item-value">+91 8885405826</div>
+              </div>
+            </a>
+            <a href="#" class="contact-item">
+              <div class="contact-item-icon">💼</div>
+              <div>
+                <div class="contact-item-label">LinkedIn</div>
+                <div class="contact-item-value">linkedin.com/in/varshiniuppada</div>
+              </div>
+            </a>
+            <a href="#" class="contact-item">
+              <div class="contact-item-icon">🐙</div>
+              <div>
+                <div class="contact-item-label">GitHub</div>
+                <div class="contact-item-value">github.com/varshiniuppada</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Internship Opportunity" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Hi Varshini, I'd love to connect about..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit" id="submitBtn">
+            <span id="submitText">Send Message</span>
+            <span id="submitIcon">🚀</span>
+          </button>
+          <div id="formSuccess" class="form-success" style="display:none">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <span class="brand-code">&lt;</span>VU<span class="brand-code">/&gt;</span>
+      </div>
+      <p class="footer-text">Designed &amp; Built by <strong>Varshini Uppada</strong> · 2026</p>
+      <p class="footer-quote">"Code is craft. Architecture is art."</p>
+      <div class="visitor-badge">
+        <span class="vb-dot"></span>
+        <span id="visitor-count">–</span> live visitor<span id="vplural">s</span> online
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="vis3d.js"></script>
+  <script src="main.js"></script>
+  <script src="backend.js"></script>
+</body>
+
+</html>
